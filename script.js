@@ -195,18 +195,18 @@ enemyImageThree.src = 'img_19.png';
         updateTwo(){
             this.x += this.speed
             this.y +=1
-            if (this.x > 1700) {
-                this.x = 800 ;
+            if (this.x > 2500) {
+                this.x = 700 ;
                 this.y = Math.random() * (canvas.height - 150) + 90 ;
                 this.speed = Math.random() *2 +2;
             }
 
-            const dx = this.x - player.x;
-            const dy = this.y - player.y;
-            const distance = Math.sqrt(dx*dx + dy*dy);
-            if (distance < this.radius + player.radius-20){
-                handleGameOver();
-            }
+            // const dx = this.x - player.x;
+            // const dy = this.y - player.y;
+            // const distance = Math.sqrt(dx*dx + dy*dy);
+            // if (distance < this.radius + player.radius-20){
+            //     handleGameOver();
+            // }
         }
         updateThree(){
             this.x -= this.speed;
